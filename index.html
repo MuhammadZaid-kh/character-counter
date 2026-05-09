@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style>body{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+main{
+    box-shadow: 0px 0px 1px;
+    width: 100%;
+    max-width: 500px;
+    height:250px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+input{
+    padding: 20px;
+    width: inherit;
+    box-sizing: border-box;
+}
+div{
+    height: 40px;
+}
+button{
+    width: inherit;
+    padding: 10px;
+    background-color: lime;
+}
+h2{
+    text-align: center;
+}</style>
+            </head>
+            <body>
+                
+
+
+    
+    
+    
+        <main>
+        <h2>Charecters Counter</h2>
+<input placeholder="Enter text here"> 
+<div>Counted: 1 charecter</div>
+<button>count</button>
+        </main>
+       
+    
+
+                <script>
+document.querySelector("button").addEventListener(
+    "click", () => {
+            let number = 1;
+        let output = document.querySelector("div");
+        let a = document.querySelector("input").value;
+        for(let i = number; i<=a.length; i++){
+            
+            output.innerText = "Counted: "+ i + " charecter";
+           
+            
+             
+        }
+    }
+)</script>
+            
+        
+    </body>
